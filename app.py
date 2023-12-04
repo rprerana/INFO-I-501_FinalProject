@@ -15,7 +15,7 @@ dis = per*100
 y = round(dis,2)
 col1, col2 = st.columns(2)
 
-html_str = f"""
+html_str_p = f"""
 <style>
 p.a {{
   color:green;
@@ -24,11 +24,23 @@ p.a {{
 </style>
 <p class="a">{lab}</p>
 """
-st.markdown(html_str, unsafe_allow_html=True)
+
+html_str_n = f"""
+<style>
+p.b {{
+  color:red;
+  font:bold 40px Monospace;
+}}
+</style>
+<p class="b">{lab}</p>
+"""
 
 with col1:
-   st.header("Sentiment")
-   st.subheader(lab)
+  st.header("Sentiment")
+  if(lab=='POSITIVE'):
+    st.markdown(html_str_p, unsafe_allow_html=True)
+  else:
+    st.markdown(html_str_n, unsafe_allow_html=True)
    
 with col2:
    st.header("%")
