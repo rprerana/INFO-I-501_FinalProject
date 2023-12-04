@@ -28,7 +28,7 @@ st.markdown(html_str, unsafe_allow_html=True)
 with col1:
    st.header("Sentiment")
    if(lab=='POSITIVE'):
-      st.subheader(':green['lab']')
+      st.subheader(lab)
    else
       st.subheader(:red[lab])
    
