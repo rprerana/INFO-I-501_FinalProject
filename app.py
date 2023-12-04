@@ -4,7 +4,7 @@ from transformers import pipeline
 import matplotlib.pyplot as plt
 
 st.subheader('Enter text to be analysed')
-text = st.text_area()
+text = st.text_area(label="")
 classifier = pipeline("sentiment-analysis", model="preranar/my_awesome_model")
 a = classifier(text)
 
