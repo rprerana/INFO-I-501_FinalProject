@@ -14,13 +14,14 @@ opp_per = 1-a[0]['score']
 st.write(lab)
 if(lab=='POSITIVE'):
   st.write('entered if ')
-  labels = ["Negative", "Positive"]
-  sizes = [opp_per,per]
+  labels = ["Positive", "Negative"]
+  sizes = [per,opp_per]
 elif(lab=='NEGATIVE'):
   st.write('entered else ')
   labels = 'Positive', 'Negative'
   sizes = [opp_per,per]
 
+colors = ["Green","Red"]
 fig1, ax1 = plt.subplots()
 ax1.pie(sizes, labels=labels,autopct='%1.1f%%',
         shadow=True, startangle=90)
