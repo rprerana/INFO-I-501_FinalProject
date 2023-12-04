@@ -36,7 +36,7 @@ p.b {{
 """
 
 with col1:
-  st.header("Sentiment")
+  st.header("SENTIMENT")
   if(lab=='POSITIVE'):
     st.markdown(html_str_p, unsafe_allow_html=True)
   else:
