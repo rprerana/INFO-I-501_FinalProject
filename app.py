@@ -18,7 +18,7 @@ col1, col2 = st.columns(2)
 html_str = f"""
 <style>
 p.a {{
-  color:"green";
+  color:green;
 }}
 </style>
 <p class="a">{lab}</p>
