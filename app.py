@@ -16,15 +16,14 @@ if(lab=='POSITIVE'):
   st.write('entered if ')
   labels = ["Negative", "Positive"]
   sizes = [opp_per,per]
-  explode2 = [0, 0.1]  # only "explode" the 2nd slice (i.e. 'Hogs')
 elif(lab=='NEGATIVE'):
   st.write('entered else ')
   labels = 'Positive', 'Negative'
   sizes = [opp_per,per]
-  explode = (0, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
 fig1, ax1 = plt.subplots()
-ax1.pie(sizes, labels=labels, explode=explode2)
+ax1.pie(sizes, labels=labels,autopct='%1.1f%%',
+        shadow=True, startangle=90)
 ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
 st.pyplot(fig1)
