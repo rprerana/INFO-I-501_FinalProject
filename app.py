@@ -57,5 +57,5 @@ colors = ["#77DD76","#FF6962"]
 fig1, ax1 = plt.subplots()
 ax1.pie(sizes, labels=labels,autopct='%1.1f%%', startangle=90, colors=colors)
 ax1.axis('equal')
-ax1.set_facecolor('#000000')
+ax1.set_facecolor((0,0,0))
 st.pyplot(fig1)
