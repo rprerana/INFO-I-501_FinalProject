@@ -3,8 +3,8 @@ import streamlit as st
 from transformers import pipeline
 import matplotlib.pyplot as plt
 
-
-text = st.text_area('Enter text to be analysed')
+st.subheader('Enter text to be analysed')
+text = st.text_area()
 classifier = pipeline("sentiment-analysis", model="preranar/my_awesome_model")
 a = classifier(text)
 
