@@ -21,7 +21,7 @@ elif(lab=='NEGATIVE'):
   labels = 'Positive', 'Negative'
   sizes = [opp_per,per]
 
-colors = ["Green","Red"]
+colors = ["#77DD76","#FF6962"]
 fig1, ax1 = plt.subplots()
 ax1.pie(sizes, labels=labels,autopct='%1.1f%%',
         shadow=True, startangle=90, colors=colors)
