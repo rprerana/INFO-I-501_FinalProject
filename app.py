@@ -17,7 +17,7 @@ col1, col2 = st.columns(2)
 with col1:
    st.header("Sentiment")
    if(lab=='POSITIVE'):
-      st.subheader(:green[lab])
+      st.subheader(':green['lab']')
    else
       st.subheader(:red[lab])
    
