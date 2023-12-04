@@ -11,13 +11,19 @@ a = classifier(text)
 lab = a[0]['label']
 per = a[0]['score']
 opp_per = 1-a[0]['score']
+dis = per*100
+y = round(dis,2)
 col1, col2 = st.columns(2)
 with col1:
    st.header("Sentiment")
-   st.subheader(lab)
+   if(lab=='POSITIVE'):
+      st.subheader(:green[lab])
+   else
+      st.subheader(:red[lab])
+   
 with col2:
    st.header("%")
-   st.subheader(per*100)
+   st.subheader(y)
 
 if(lab=='POSITIVE'):
    st.write('entered if ')
