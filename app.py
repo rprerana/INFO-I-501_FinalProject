@@ -29,8 +29,8 @@ with col1:
    st.header("Sentiment")
    if(lab=='POSITIVE'):
       st.subheader(lab)
-   else
-      st.subheader(:red[lab])
+   else:
+      st.subheader([lab)
    
 with col2:
    st.header("%")
