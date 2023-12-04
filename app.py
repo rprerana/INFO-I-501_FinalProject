@@ -18,7 +18,7 @@ with col1:
    st.subheader(lab)
 with col2:
    st.header("%")
-   st.subheader(per)
+   st.subheader(per*100)
 
 if(lab=='POSITIVE'):
   st.write('entered if ')
