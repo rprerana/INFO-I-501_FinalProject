@@ -14,6 +14,17 @@ opp_per = 1-a[0]['score']
 dis = per*100
 y = round(dis,2)
 col1, col2 = st.columns(2)
+
+html_str = f"""
+<style>
+p.a {{
+  color:"green";
+}}
+</style>
+<p class="a">{lab}</p>
+"""
+st.markdown(html_str, unsafe_allow_html=True)
+
 with col1:
    st.header("Sentiment")
    if(lab=='POSITIVE'):
