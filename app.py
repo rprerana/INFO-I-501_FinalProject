@@ -50,7 +50,6 @@ if(lab=='POSITIVE'):
    labels = ["Positive", "Negative"]
    sizes = [per,opp_per]
 elif(lab=='NEGATIVE'):
-   st.write('entered else ')
    labels = 'Positive', 'Negative'
    sizes = [opp_per,per]
 
