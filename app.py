@@ -11,7 +11,15 @@ st.write(a)
 lab = a[0]['label']
 per = a[0]['score']
 opp_per = 1-a[0]['score']
-st.write(lab)
+col1, col2 = st.columns(2)
+
+with col1:
+   st.header("Sentiment")
+   st.subheader(lab)
+with col2:
+   st.header("%")
+   st.subheader(per)
+
 if(lab=='POSITIVE'):
   st.write('entered if ')
   labels = ["Positive", "Negative"]
@@ -23,8 +31,7 @@ elif(lab=='NEGATIVE'):
 
 colors = ["#77DD76","#FF6962"]
 fig1, ax1 = plt.subplots()
-ax1.pie(sizes, labels=labels,autopct='%1.1f%%',
-        shadow=True, startangle=90, colors=colors)
+ax1.pie(sizes, labels=labels,autopct='%1.1f%%', startangle=90, colors=colors)
 ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
 st.pyplot(fig1)
