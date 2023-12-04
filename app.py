@@ -11,13 +11,12 @@ st.write(a)
 lab = a[0]['label']
 per = a[0]['score']
 opp_per = 1-a[0]['score']
-st.write(opp_per)
-st.write(per)
+st.write(lab)
 if(lab=='POSITIVE'):
   st.write('entered if ')
-  labels = 'Positive', 'Negative'
+  labels = ["Positive", "Negative"]
   sizes = [per,opp_per]
-  explode = [0.1, 0]  # only "explode" the 2nd slice (i.e. 'Hogs')
+  explode = [0, 0.1]  # only "explode" the 2nd slice (i.e. 'Hogs')
 elif(lab=='NEGATIVE'):
   st.write('entered else ')
   labels = 'Positive', 'Negative'
