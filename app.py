@@ -19,7 +19,7 @@ html_str = f"""
 <style>
 p.a {{
   color:green;
-  font:bold 12px Courier;
+  font:bold 50px Roboto;
 }}
 </style>
 <p class="a">{lab}</p>
