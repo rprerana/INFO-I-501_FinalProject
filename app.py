@@ -19,6 +19,7 @@ if(lab=='POSITIVE'):
   sizes = [per,opp_per]
   #explode = (0.8, 0.5)  # only "explode" the 2nd slice (i.e. 'Hogs')
 elif(lab=='NEGATIVE'):
+  st.write('entered else ')
   labels = 'Positive', 'Negative'
   sizes = [per,opp_per]
   explode = (0.1, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
