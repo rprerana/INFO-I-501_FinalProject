@@ -27,7 +27,7 @@ st.markdown(html_str, unsafe_allow_html=True)
 
 with col1:
    st.header("Sentiment")
-   st.subheader([lab)
+   st.subheader(lab)
    
 with col2:
    st.header("%")
