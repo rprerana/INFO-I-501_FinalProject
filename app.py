@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 st.subheader('Enter text to be analysed')
 text = st.text_area(label="")
+a=''
 classifier = pipeline("sentiment-analysis", model="preranar/my_awesome_model")
 a = classifier(text)
 if(a!=''):
