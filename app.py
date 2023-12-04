@@ -13,7 +13,7 @@ per = a[0]['score']
 opp_per = 1-a[0]['score']
 st.write(opp_per)
 st.write(per)
-if(lab='POSITIVE'):
+if(lab=='POSITIVE'):
   labels = 'Positive', 'Negative'
   sizes = [per,opp_per]
   explode = (0.1, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
