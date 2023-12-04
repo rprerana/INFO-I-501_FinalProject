@@ -47,7 +47,6 @@ with col2:
    st.subheader(y)
 
 if(lab=='POSITIVE'):
-   st.write('entered if ')
    labels = ["Positive", "Negative"]
    sizes = [per,opp_per]
 elif(lab=='NEGATIVE'):
