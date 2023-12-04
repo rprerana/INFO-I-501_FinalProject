@@ -27,10 +27,7 @@ st.markdown(html_str, unsafe_allow_html=True)
 
 with col1:
    st.header("Sentiment")
-   if(lab=='POSITIVE'):
-      st.subheader(lab)
-   else:
-      st.subheader([lab)
+   st.subheader([lab)
    
 with col2:
    st.header("%")
