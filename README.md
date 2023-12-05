@@ -22,11 +22,15 @@ This project aims to develop a sentiment analysis model to evaluate the emotion 
 **Data Description**
 
 The dataset I have used to train the model is the IMDB 50K Dataset
+
 Size of the Dataset - 66.21 MB
+
 Link to the Dataset - [imdb-dataset-of-50k-movie-reviews](https://huggingface.co/datasets/imdb)
 
 The dataset has two columns -
+
 text: a string feature.
+
 label: a classification label, with possible values including neg (0), pos (1).
 
 **Algoritm Description**
@@ -36,22 +40,36 @@ The model was trained using a pre-trained model - DistilBERT base model (uncased
 The following hyperparameters were used during training:
 
 learning_rate: 2e-05
+
 train_batch_size: 16
+
 eval_batch_size: 16
+
 seed: 42
+
 optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
+
 lr_scheduler_type: linear
+
 num_epochs: 2
 
 **Tools Used**
+
 I have used the following tools in the project
+
 Github
+
 Streamlit
+
 Hugging Face
+
 Google Colab
+
 T4 GPU (through Colab)
 
 I have used the following NLP python libraries:
+
 torch
+
 transformers
 
