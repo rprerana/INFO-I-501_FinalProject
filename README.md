@@ -33,7 +33,7 @@ text: a string feature.
 
 label: a classification label, with possible values including neg (0), pos (1).
 
-**Algoritm Description**
+**Algorithm Description**
 
 The model was trained using a pre-trained model - DistilBERT base model (uncased). The model does not make a difference between english and English.
 
